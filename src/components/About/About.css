@@ -1,0 +1,44 @@
+.about{
+    display: flex;
+    width: 100%;
+
+    min-height: 60vh;
+    ;
+}
+.about-left{
+width: 40%;
+justify-content: center;
+margin: auto;
+
+height: 100%;
+}
+.about-right{
+width: 60%;
+}
+.about-right h2{
+  margin-left: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: #CD212A;
+
+}
+.about-right p{
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #455A64;
+    text-align: justify;
+}
+.about-see-more{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+.about-see-more button{
+    color: #fff;
+    background-color: #009246;
+    border: none ;
+    padding: 10px 20px;
+    border-radius: 20px;
+}

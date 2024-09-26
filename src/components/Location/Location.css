@@ -1,0 +1,49 @@
+.location{
+    width: 100%;
+}
+.location-title{
+    text-align: center;
+    color: #CD212A;
+    font-size: 2rem;
+}
+.location-shop iframe{
+    border: none;
+}
+.location-shop{
+    width: 95%;
+    margin: auto;
+}
+.location-search {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.location-search:hover {
+    border-color: #007bff; /* Change border color on hover */
+}
+
+.location-search input {
+    flex: 1; /* Make the input take all available space */
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.location-search button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.location-search button:hover {
+    background-color: #0056b3; /* Darken on hover */
+}
+

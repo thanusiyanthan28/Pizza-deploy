@@ -1,0 +1,96 @@
+.home {
+  display: flex;
+  margin-top: 80px;
+  flex-direction: column;
+  height: calc(100vh - 70px); /* Remaining height after header */
+  padding: 20px; /* Add some padding */
+  background-color: #f9f9f9; /* Background color */
+}
+
+.home-main-content {
+  display: flex;
+  width: 100%;
+}
+
+.home-left-content {
+  width: 50%;
+  line-height: 30px;
+}
+.home-left-content h2{
+  color: #009246;
+  font-size: 3rem;
+  font-family: 'Sofadi One', cursive; /* Applying Sofadi One font */
+}
+.home-left-content h1{
+  color: #CD212A;
+  font-size: 5rem;
+  font-family: 'Sofadi One', cursive; /* Applying Sofadi One font */
+  
+}
+.home-left-content p{
+  color: #455A64;
+  font-size: 1rem;
+  line-height: 25px;
+}
+
+.home-right-content {
+  background-image: url(../../assets/Images/Home/twoline.png);
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center align the images */
+}
+/* small image */
+.small-image-1{
+
+}
+.small-image-1 img{
+
+}
+.small-image-2{
+  
+}
+
+
+
+
+.home-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #009246;
+  border-radius: 12px;
+  height: 30%;
+  margin-top: -50px;
+
+}
+
+.home-left-content-button button {
+  padding: 10px 16px;
+  border: 1px solid #009246;
+  margin-right: 15%;
+  border-radius: 6px;
+  color: #009246;
+  background-color: transparent;
+}
+.operating-hours {
+  padding: 10px; /* Add some padding */
+  position: relative; /* Position for absolute children if needed */
+  align-items: center; /* Center content vertically */
+  width: 33.33%;
+  text-align: center;
+  color: #fff;
+  line-height: 10px;
+}
+
+/* Create the vertical line */
+.operating-hours:not(:last-child)::after {
+  content: ""; /* Required for pseudo-element */
+  position: absolute; /* Position relative to the parent */
+  right: -15px; /* Adjust as needed for spacing */
+  height: 90%; /* Height of the vertical line */
+  width: 2px; /* Width of the vertical line */
+  background-color: #ffffffbb; /* Color of the vertical line */
+  top: 50%; /* Start from the middle */
+  transform: translateY(-50%); /* Center the line vertically */
+}

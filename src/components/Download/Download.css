@@ -1,0 +1,41 @@
+.download{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+.download-title{
+    text-align: center;
+    color: #009246;
+    font-size: 2rem;
+}
+.download-left{
+    width: 45%;
+    display: flex;;
+}
+.download-right{
+    width: 55%;
+}
+.download-left img{
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    margin-top: -20%;
+    margin-left: 10%;
+}
+.download-text{
+    margin-top: 50px;
+}
+.download-text h1{
+ font-size: 3rem;
+ margin-bottom: 50px;
+ font-family: 'Roboto', sans-serif;
+}
+.download-text p{
+    font-family: 'Roboto', sans-serif;
+    color: #455A64;
+   }
+.download-icon{
+ display: flex;
+ gap: 10%;
+}

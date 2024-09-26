@@ -1,0 +1,29 @@
+.faq{
+    width: 100%;
+    height: 80vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.faq-left{
+    width: 40%;
+}
+.sub-faq{
+    height: 100%;
+    margin-left: 50px;
+}
+.faq-right{
+    width: 40%;
+    align-items: center;
+    display: flex;
+}
+.faq-right img{
+    width: 60%;
+    align-items: center;
+    margin: auto;
+} 
+.faq-title{
+    text-align: center;
+    color: #CD212A;
+
+}

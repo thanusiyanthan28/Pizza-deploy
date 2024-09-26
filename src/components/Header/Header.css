@@ -1,0 +1,129 @@
+/* Base styles for header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 100;
+  }
+  
+  .header--scrolled {
+    background-color: blue;
+  }
+  
+  /* Logo styles */
+  .header__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .logo {
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    font-family: 'Reggae One', cursive;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    margin-top: -10px;
+  }
+  
+  /* Menu styles */
+  .header__menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .header__menu ul li {
+    margin: 0 15px;
+    border: 1px solid #009246; /* Green border */
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header__menu ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #009246; /* Menu text color */
+  }
+  
+  .header__menu ul li.selected,
+  .header__menu ul li:hover {
+    background-color: #009246; /* Background changes to green when selected or hovered */
+  }
+  
+  .header__menu ul li.selected a,
+  .header__menu ul li:hover a {
+    color: white; /* Text turns white when selected or hovered */
+  }
+  
+  /* Order button styles */
+  .header__order .order-btn {
+    padding: 10px 20px;
+    background-color: #CD212A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .header__order .order-btn:hover {
+    background-color: #ff5500;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 7px) {
+    .header {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      min-height: 100px; /* Increase height for better touch targets */
+    }
+  
+    .header__logo {
+      margin-bottom: 10px; /* Space between logo and menu */
+    }
+  
+    .header__menu ul {
+      flex-direction: column; /* Stack menu items vertically */
+      width: 100%; /* Full width */
+      align-items: center; /* Center align menu items */
+    }
+  
+    .header__menu ul li {
+      margin: 5px 0; /* Space between menu items */
+      width: 80%; /* Width of menu items */
+    }
+  
+    .header__order .order-btn {
+      width: 80%; /* Full width for button on mobile */
+      margin: 10px 0; /* Space around button */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .brand-name {
+      font-size: 1.2rem; /* Smaller brand name on extra small screens */
+    }
+  
+    .header__menu ul li a {
+      font-size: 14px; /* Smaller font size for menu items */
+    }
+  
+    .header__order .order-btn {
+      padding: 8px 16px; /* Adjust button size */
+    }
+  }
+  

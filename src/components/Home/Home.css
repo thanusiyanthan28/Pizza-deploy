@@ -2,9 +2,8 @@
   display: flex;
   margin-top: 80px;
   flex-direction: column;
-  height: calc(100vh - 70px); /* Remaining height after header */
   padding: 20px; /* Add some padding */
-  background-color: #f9f9f9; /* Background color */
+  background-color: #ffffff; /* Background color */
 }
 
 .home-main-content {
@@ -60,8 +59,9 @@
   width: 100%;
   background-color: #009246;
   border-radius: 12px;
-  height: 30%;
+  height: 100px;
   margin-top: -50px;
+  z-index: 99;
 
 }
 

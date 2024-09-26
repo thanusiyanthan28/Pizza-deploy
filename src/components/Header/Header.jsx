@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './Header.css'; // Import the CSS for styling
 import pizzalogo from "../../assets/Images/Home/PizzaLogo.png"
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
   const [selectedMenu, setSelectedMenu] = useState('Home'); // Default selected menu
+  const navigate = useNavigate(); // Hook for navigation
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +26,19 @@ const Header = () => {
 
   const handleMenuClick = (menu) => {
     setSelectedMenu(menu); // Set the selected menu
+
+    // Navigate to the corresponding route
+    if (menu === 'Home') {
+      navigate('/home-page'); // Navigate to the homepage
+    } else if (menu === 'About') {
+      navigate('/about');
+    } else if (menu === 'Menu') {
+      navigate('/main-manu'); // Navigate to the manu
+    } else if (menu === 'Service') {
+      // Add navigation for Service if necessary
+    } else if (menu === 'Location') {
+      navigate('/location');
+    }
   };
 
   return (
@@ -40,7 +55,7 @@ const Header = () => {
               className={selectedMenu === menu ? 'selected' : ''}
               onClick={() => handleMenuClick(menu)}
             >
-              <a href={`#${menu.toLowerCase()}`}>{menu}</a>
+              <a>{menu}</a>
             </li>
           ))}
         </ul>

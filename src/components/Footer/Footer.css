@@ -17,8 +17,11 @@
 }
 .footer-content h4{
     margin-bottom: 30px;
+    font-weight: 300;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 .footer-content p{
     font-family: 'Roboto', sans-serif;

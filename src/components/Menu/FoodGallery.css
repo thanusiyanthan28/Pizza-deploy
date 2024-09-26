@@ -1,0 +1,104 @@
+.food-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+   
+  }
+  
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+  }
+  
+  .food-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: transparent;
+    /* background-color: #CD212A; */
+    color: #CD212A;
+    border: 1px solid ;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .food-button.active {
+    transform: scale(1.4) !important;
+    background-color: #CD212A;
+    color: #ffffff;
+  }
+  
+  .button-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+  }
+  
+  .right-side-images {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 55%;
+    overflow: hidden;
+  }
+  
+  .top-image,
+  .main-image,
+  .bottom-image {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+  }
+  
+  .main-image {
+    width: 400px;
+    height: 400px;
+  }
+  .inside-button{
+    display: flex;
+    justify-content: center;
+
+    gap: 10%;
+    
+  }
+.buttons-left h2{
+text-align: center;
+font-family: 'Proza Libre', sans-serif;
+font-size: 34px;
+    
+  }
+  .buttons-left p{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10%;
+    font-family: 'Roboto', sans-serif;
+        
+      }
+  .inside-button-seemore{
+    width: 100px;
+    float: left;
+    margin-left: 70%;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color:#CD212A;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 15px;
+  }
+  

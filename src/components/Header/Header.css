@@ -13,7 +13,7 @@
   }
   
   .header--scrolled {
-    background-color: blue;
+    background-color: rgb(194, 207, 14);
   }
   
   /* Logo styles */
@@ -63,6 +63,7 @@
   .header__menu ul li.selected,
   .header__menu ul li:hover {
     background-color: #009246; /* Background changes to green when selected or hovered */
+    cursor: pointer;
   }
   
   .header__menu ul li.selected a,

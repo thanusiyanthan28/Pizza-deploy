@@ -32,6 +32,8 @@ const AboutSlide = () => {
           <clipPath id="curvedMask" clipPathUnits="objectBoundingBox">
             <path d="M 0.2 0 C 0.4 0.3, 0.6 0.1, 0.8 0.3 C 1 0.5, 1 0.8, 0.8 1 C 0.6 1.2, 0.4 1, 0.2 0.8 C 0 0.6, 0 0.3, 0.2 0 Z" />
           </clipPath>
+
+
         </defs>
       </svg>
 

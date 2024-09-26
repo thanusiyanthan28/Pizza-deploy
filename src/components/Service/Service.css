@@ -1,0 +1,124 @@
+.service-special-title {
+    text-align: center;
+    color: #CD212A;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .service-image-gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-image: url("../../assets/Images/Service/service-back.png");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .service-image-container {
+    position: relative;
+    width: 32%;
+    overflow: hidden;
+  }
+  
+  .service-image {
+    width: 100%;
+    display: block;
+    transition: filter 0.3s ease;
+    filter: brightness(0.7); /* Initially CMYK-like color */
+    border-radius: 15px; 
+  }
+  
+  .service-image-container:hover .service-image {
+    filter: brightness(1); /* Becomes colorful on hover */
+  }
+  
+  .service-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10px;
+    z-index: 2;
+    transition: transform 0.5s ease;
+    border-radius: 0 0 15px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
+  
+  .service-title {
+    margin: 0;
+    opacity: 1; /* Always visible */
+    transition: transform 0.5s ease;
+    font-weight: 500;
+    font-size: 22px;
+  }
+  
+  .qustion-answer {
+    display: none; /* Initially hidden */
+    margin-right: 10px;
+  }
+  .service-image-container:hover .qustion-answer {
+    display: block; /* Show on hover */
+    transition-delay: 0.2s;
+
+  }
+  .service-image-container:hover p{
+    display: block; /* Show on hover */
+    transition-delay: 0.2s;
+  }
+  
+  .service-description {
+    margin: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    font-size: 14px;
+
+  }
+  
+  .service-image-container:hover .service-title {
+    transform: translateY(-20px); /* Move title up */
+    margin-top: 10px;
+    transition-delay: 0.2s;
+  }
+  .service-image-container:hover .qustion-answer {
+
+
+    transition-delay: 0.5s;
+  }
+  
+  .service-image-container:hover .service-description {
+    opacity: 1;
+    transform: translateY(-20px); /* Moves description along with title */
+  }
+  
+  /* Expanding overlay on hover */
+  .service-image-container:hover .service-overlay {
+    transform: translateY(-10px); /* Move overlay up slightly */
+  }
+  
+  .service-button {
+    border: none;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: #CD212A;
+    color: #ffffff;
+  }
+  
+  /* Show answers along with the questions when hovering */
+  .service-image-container:hover .service-description {
+    opacity: 1; /* Make answer visible on hover */
+    transition-delay: 0.3s;
+  }
+  .service-answer{
+    margin-left: 20px !important;
+  }
+  .qustion1{
+    margin-top: 10px;
+  }

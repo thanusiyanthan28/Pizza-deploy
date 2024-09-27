@@ -2,31 +2,14 @@
 .pizza-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 0px;
-    padding: 20px;
-    width: 80%;
-    margin: auto;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px;
-  }
-  .pizza-title{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Proza Libre', sans-serif;
-
-  }
-  .pizza-title h2{
-    justify-content: center;
-    text-align: center;
+    padding: 20px;
   }
   
   .pizza-container {
     flex: 0 0 auto;
-    width: 250px;
-    height: 300px;
+    width: 300px;
     padding: 10px;
     border: 2px solid #f2f2f2;
     border-radius: 10px;
@@ -35,23 +18,12 @@
     overflow: hidden;
     background-color: #D9D9D9;
     font-family: 'Raleway', sans-serif;
-    row-gap: 15px !important;
   }
   
   .pizza-container img {
-    display: flex;
-    width: 80%;
+    width: 100%;
     height: auto;
     transition: transform 0.4s ease;
-    justify-content: center;
-    margin: auto;
-    margin-top: -35px;
-  }
-  .pizza-container:hover img {
-
-
- 
-
   }
   
   .pizza-container.active {
@@ -66,23 +38,16 @@
   
   .pizza-info {
     margin-bottom: 15px;
-    width: 80%;
-    margin-left: 15px;
   }
   
   .pizza-info h3 {
     font-size: 1.2rem;
     color: #333;
-    font-family: 'Raleway', sans-serif;
-   
-
   }
   
   .pizza-info p {
     font-size: 0.9rem;
     color: #666;
-    font-family: 'Raleway', sans-serif;
-
   }
   
   .pizza-info button {
@@ -93,17 +58,13 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 50px;
-    z-index: 1000 !important;
-    position: relative;
   }
   
   .pizza-info button:hover {
     background-color: #e74c3c;
-    z-index: 99000 !important;
   }
   
   .pizza-container:hover img {
-    transform: scale(1.4);
+    transform: scale(1.3);
   }
   

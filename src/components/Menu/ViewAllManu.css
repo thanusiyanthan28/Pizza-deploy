@@ -1,0 +1,7 @@
+.view-all-manu-title img{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+}

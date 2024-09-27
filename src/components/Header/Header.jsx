@@ -29,7 +29,7 @@ const Header = () => {
 
     // Navigate to the corresponding route
     if (menu === 'Home') {
-      navigate('/home-page'); // Navigate to the homepage
+      navigate('/'); // Navigate to the homepage
     } else if (menu === 'About') {
       navigate('/about');
     } else if (menu === 'Menu') {
@@ -45,7 +45,7 @@ const Header = () => {
     <header className={`header ${scroll ? 'header--scrolled' : ''}`}>
       <div className="header__logo">
         <img src={pizzalogo} alt="Pizza Logo" className="logo" />
-        <span className="brand-name">PizzaBrand</span>
+        <span className="brand-name">Pizza Da Valter</span>
       </div>
       <nav className="header__menu">
         <ul>

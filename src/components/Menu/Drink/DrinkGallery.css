@@ -1,0 +1,54 @@
+.drink-gallery-title{
+    text-align: center;
+    font-family: 'Proza Libre', sans-serif;
+}
+.button-group {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.button {
+    color: rgb(255, 0, 0); /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center the text */
+    background-color: transparent; /* Transparent background */
+    position: relative; /* Position relative for underline */
+    transition: color 0.3s; /* Transition for color change */
+    font-family: Raleway;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.button.active {
+    color: rgb(0, 0, 0); /* Change color when active */
+}
+
+/* Create the underline effect */
+.button.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Position the underline below the button */
+    height: 2px; /* Height of the underline */
+    background-color: #009246; /* Color of the underline */
+    animation: underline-animation 0.3s forwards; /* Animation */
+   
+}
+
+@keyframes underline-animation {
+    from {
+        width: 0; /* Start with no width */
+    }
+    to {
+        width: 100%; /* Animate to full width */
+    }
+}
+
+.button.inactive {
+    color: rgb(100, 100, 100); /* Grey color for inactive buttons */
+}
+
+

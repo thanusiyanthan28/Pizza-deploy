@@ -12,6 +12,8 @@ import HomePage from './components/Pages/HomePage';
 import ImageGallery from './components/Menu/Manu';
 import FoodGallery from './components/Menu/FoodGallay';
 import MainManu from './components/Menu/MainManu';
+import ViewAllManu from './components/Menu/ViewAllManu';
+import Appetizere from './components/Menu/ViewAllManu/Appetizere';
 
 const App = () => {
   return (
@@ -19,7 +21,7 @@ const App = () => {
       <Header />
     
       <div style={{marginTop: '80px'}}></div>
-
+      {/* <ViewAllManu /> */}
       <Routes>
         <Route path="/home" element={<Home/>} />
         <Route path="/about" element={<About/>} />
@@ -29,8 +31,9 @@ const App = () => {
         <Route path="/footer" element={<Footer />} />
 
         {/* main pages */}
-        <Route path="/home-page" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/main-manu" element={<MainManu />} />
+        <Route path="/appetizere" element={<Appetizere />} />
         
         
       </Routes>

@@ -1,13 +1,16 @@
 .home-right-content-inside{
-    margin-top: -100px;
+  display: flex;
+   gap: 50px !important;
+    margin-top: -60px;
     height: 600px;
 }
   
-  .home-top-image {
+  .home-top-image  {
     top: 0;
     left: 0;
     object-fit: cover;
     z-index: 1; /* Ensure it's above other elements */
+
   }
   
   .small-image-row {
@@ -26,4 +29,10 @@
   .small-image:hover {
     transform: scale(1.1); /* Slight zoom on hover */
   }
-  
+  .small-image-1{
+    margin-top: -50px;
+    margin-left: -100px;
+  }
+  .small-image-3{
+    margin-top: -50px;
+  } 

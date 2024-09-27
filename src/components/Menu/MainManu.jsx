@@ -8,7 +8,7 @@ const MainManu = () => {
   return (
     <div>
         <FoodGallery />
-        <PizzaGallery />
+        {/* <PizzaGallery /> */}
         <Download />
         <Location/>
     </div>

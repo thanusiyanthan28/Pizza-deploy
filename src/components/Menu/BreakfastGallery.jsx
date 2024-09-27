@@ -21,7 +21,7 @@ const pizzas = [
   // ... add more pizza data for the remaining 11 types
 ];
 
-const PizzaGallery = () => {
+const BreakfastGallery = () => {
   const [activePizza, setActivePizza] = useState(null);  // Active pizza state
 
   const handleMouseEnter = (id) => {
@@ -34,11 +34,10 @@ const PizzaGallery = () => {
 
   return (
     <div>
-      <div className="pizza-title">
-      <h2>Pizza</h2>
-      </div>
+    <div className="pizza-title">
+    <h2>Breakfast</h2>
+    </div>
     <div className="pizza-gallery">
-    
       {pizzas.map((pizza) => (
         <div
           key={pizza.id}
@@ -59,4 +58,4 @@ const PizzaGallery = () => {
   );
 };
 
-export default PizzaGallery;
+export default BreakfastGallery;

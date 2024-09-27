@@ -8,13 +8,14 @@ import Appetizere from './ViewAllManu/Appetizere';
 import PizzaGallery from './PizzaGallery';
 import BreakfastGallery from './BreakfastGallery';
 import DrinkGallery from './Drink/DrinkGallery';
+import ViewAllManu from './ViewAllManu';
 
 
 const FoodGallery = () => {
     const [activeButton, setActiveButton] = useState('breakfast');
     const [showAppetizere, setShowAppetizere] = useState(false);
     const [showPizzaGallery, setShowPizzaGallery] = useState(false);
-    const [showBreakfastGallery, setShowBreakfastGallery] = useState(false);
+    const [showBreakfastGallery, setShowBreakfastGallery] = useState(true);//initioal 
     const [showDrinkGallery, setShowDrinkGallery] = useState(false); // State for DrinkGallery visibility
 
     const images = {
@@ -144,7 +145,7 @@ const FoodGallery = () => {
             </div>
 
             {/* Conditionally render the Appetizere, PizzaGallery, BreakfastGallery, or DrinkGallery components */}
-            {showAppetizere && <Appetizere />}
+            {showAppetizere && <ViewAllManu />}
             {showPizzaGallery && <PizzaGallery />}
             {showBreakfastGallery && <BreakfastGallery />}
             {showDrinkGallery && <DrinkGallery />} {/* Render DrinkGallery when applicable */}

@@ -18,7 +18,7 @@ const pizzas = [
   // Add more pizza objects...
 ];
 
-const Appetizere = () => {
+const HotStarters = () => {
   const [activePizza, setActivePizza] = useState(null); // Active pizza state
   const scrollRef = useRef(null);
 
@@ -37,7 +37,7 @@ const Appetizere = () => {
 
   return (
     <div className="appetizere-gallery-container">
-        <div className='appetizere-title'><h2>Appetizers</h2> </div>
+        <div className='appetizere-title'><h2>Hot Starters</h2> </div>
       <button className="appetizere-arrow appetizere-left-arrow" onClick={() => scroll('left')}>‹</button>
 
       <div className="appetizere-gallery" ref={scrollRef}>
@@ -63,4 +63,4 @@ const Appetizere = () => {
   );
 };
 
-export default Appetizere;
+export default HotStarters;

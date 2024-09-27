@@ -15,23 +15,25 @@
 }
 .location-search {
     display: flex;
-    align-items: center;
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: none;
     transition: border-color 0.3s;
+    width: 95%;
+    margin: auto;
+    background-color:#009246 ;
+    color: #fff;
+    font-family: "roboto";
+}
+.location-search p{
+    text-align: left;
+    margin-left: 10px;
+}
+.location-search p > span{
+ font-weight: bold;
+ letter-spacing: 1px;
 }
 
 .location-search:hover {
     border-color: #007bff; /* Change border color on hover */
-}
-
-.location-search input {
-    flex: 1; /* Make the input take all available space */
-    padding: 10px;
-    border: none;
-    border-radius: 5px 0 0 5px;
 }
 
 .location-search button {

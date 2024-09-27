@@ -52,7 +52,7 @@ const Service = () => {
 
   return (
     < >
-    <h2 className='service-special-title'>Pizza Da Valter Special Diets</h2>
+    <h2 className='service-special-title'>Pizza Da Valter Features & Services</h2>
     <div className="service-image-gallery">
       {images.map((image, index) => (
         <div className="service-image-container" key={index}>

@@ -35,6 +35,7 @@ const Header = () => {
     } else if (menu === 'Menu') {
       navigate('/main-manu'); // Navigate to the manu
     } else if (menu === 'Service') {
+      navigate('/service'); 
       // Add navigation for Service if necessary
     } else if (menu === 'Location') {
       navigate('/location');

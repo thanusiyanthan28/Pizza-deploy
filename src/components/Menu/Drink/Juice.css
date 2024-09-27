@@ -8,6 +8,7 @@
     row-gap: 20px;
     margin: auto;
     gap: 10px;
+    justify-content: center;
   }
   .juice-title{
     width: 80%;
@@ -52,7 +53,7 @@
   }
   
   .juice-container.juice-active {
-    transform: scale(1.1);
+    transform: scale(1.05);
     z-index: 1;
   }
   
@@ -101,6 +102,6 @@
   }
   
   .juice-container:hover img {
-    transform: scale(1.4);
+    transform: scale(1.6);
   }
   

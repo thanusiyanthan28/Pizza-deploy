@@ -27,9 +27,9 @@ const HomeSlide = () => {
   });
 
   return (
-    <div className="home-right-content-inside" style={{ position: 'relative', width: '80%', height: '600px' , backgroundColor:'transparent'}}>
+    <div className="home-right-content-inside" style={{ position: 'relative', width: '80%', height: '500px' , backgroundColor:'transparent'}}>
       {/* Top large image with smooth transition */}
-      {mainTransition((style, i) => (
+      <div>{mainTransition((style, i) => (
         <animated.img
           key={i}
           src={images[i]}
@@ -37,19 +37,21 @@ const HomeSlide = () => {
           alt="Top Pizza"
           style={{
             ...style,
-            marginTop:'',
+            marginTop:'0',
             position:'absolute',
-            top: '0',
-            left: '0',
+            top: '',
+            left: '',
             width: '80%',
             objectFit: 'cover', // Maintain image aspect ratio
             zIndex: 1, // Keep it above the smaller images
           }}
         />
+        
       ))}
+      </div>
 
       {/* Row of smaller images */}
-      <div className="small-image-row" style={{ position: 'absolute', bottom: '0', width: '100%', display: 'flex', justifyContent: '' }}>
+      <div className="small-image-row" style={{ position: 'absolute', bottom: '-20%', width: '100%', display: 'flex', justifyContent:"" }}>
         <img
           src={images[(currentIndex + 1) % images.length]}
           className="small-image small-image-1"

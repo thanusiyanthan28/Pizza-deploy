@@ -34,14 +34,7 @@ const Location = () => {
                 // onMouseEnter={() => setShowSearch(true)} 
                 // onMouseLeave={() => setShowSearch(false)}
             >
-                <input 
-                    type="text" 
-                    placeholder="Enter address..." 
-                    value={address} 
-                    onChange={(e) => setAddress(e.target.value)} 
-                />
-                <button onClick={handleSearch}>Search</button>
-                {distance && <p>Distance to Pizza Da Valter: {distance} km</p>}
+                <p><span>Address :</span>7 Bellevue Rd, London SW17 7EG, United Kingdom.</p>
             </div>
         </div>
     );

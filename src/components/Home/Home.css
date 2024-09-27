@@ -8,7 +8,8 @@
 
 .home-main-content {
   display: flex;
-  width: 100%;
+  width: 95%;
+  margin: auto;
 }
 
 .home-left-content {
@@ -34,9 +35,11 @@
 
 .home-right-content {
   background-image: url(../../assets/Images/Home/twoline.png);
+  background-repeat: no-repeat;
+  background-position: center;
   width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center; /* Center align the images */
 }
 /* small image */
@@ -56,12 +59,13 @@
 .home-bottom-content {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
   background-color: #009246;
   border-radius: 12px;
   height: 100px;
-  margin-top: -50px;
   z-index: 99;
+  margin: auto;
+  margin-top: 10%;
 
 }
 
@@ -100,4 +104,8 @@
   position: relative;
   justify-content: space-between;
   z-index: 999999;
+}
+.home-right-side{
+
+
 }

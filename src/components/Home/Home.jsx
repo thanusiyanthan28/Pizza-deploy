@@ -39,7 +39,7 @@ const Home = () => {
 
         <div className="home-right-content">
 
-          <HomeSlide />
+        <HomeSlide />
         </div>
       </div>
       <div className="home-bottom-content">

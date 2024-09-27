@@ -8,3 +8,11 @@
 .appetizers{
     margin-top: -100px;
 }
+.view-all-manu{
+  display: flex;
+  flex-direction: column;
+  grid-row: -50px;
+}
+.cold-starters,.hot-starters,.pizza-view-all,.Risotto,.main-courses,.main-salads,.sides{
+    margin-top: -8;
+}

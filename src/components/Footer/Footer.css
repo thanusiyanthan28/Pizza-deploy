@@ -3,8 +3,8 @@
     height: 300px;
     display: flex;
     flex-direction: column;
-    background-color: #455A64;
-    color: #ffffff;
+    background-color: #D2DADE;
+    color: #000000;
 
 }
 .footer-content{
@@ -47,6 +47,9 @@
     width: 100%;
     height: 50px;
     background-color: #263238;
+    font-family: "roboto";
+    font-size: 1rem;
+    color: #ffffff;
 }
 .footer-bottom{
     align-items: center;
@@ -66,5 +69,5 @@
 }
 .footer a{
     text-decoration: none;
-    color: #ffffff;
+    color: #000;
 }

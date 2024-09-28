@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
 import "./Footer.css"
 import pizzalogo from "../../assets/Images/Home/PizzaLogo.png"
 import apple from '../../assets/Images/Download/apple.png'
@@ -15,19 +16,19 @@ const Footer = () => {
             </div>
             <div className='footer-contect'>
                 <h4>Contact Us</h4>
-                <p>Phone</p>
-                <p>Email</p>
-                <p>Address</p>
+                <p>Phone : +44 20 8355 7032</p>
+                <p>Email : info@pizzadavalter.co.uk</p>
+                <p>Address : 7 Bellevue Road, London, SW17 7EG</p>
 
             </div>
             <div className='footer-quick-links'>
             <h4>Quick Links</h4>
                 
-                <p>About Us</p>
-                <p>Menu</p>
-                <p>Special Diets</p>
-                <p>Service</p>
-                <p>Location</p>
+            <a href='/about'><p>About Us</p></a> 
+             <Link to="/main-manu"><p>Menu</p></Link>   
+             <Link to="/special"><p>Special Diets</p></Link> 
+             <Link to="/service"><p>Service</p></Link> 
+             <Link to="/location"> <p>Location</p></Link>
             </div>
             <div className='footer-ligal'>
             <h4>Legal Information</h4>

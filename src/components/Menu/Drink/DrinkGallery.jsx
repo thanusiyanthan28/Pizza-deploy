@@ -31,8 +31,8 @@ const DrinkGallery = () => {
 
             {/* Conditionally Render Components */}
             {activeButton === 'juice' && <div><Juice /></div>}
-            {activeButton === 'fromTheFridge' && <Juice />}
-            {activeButton === 'water' && <Juice />}
+            {activeButton === 'fromTheFridge' && <FromTheFridge />}
+            {activeButton === 'water' && <Water />}
         </div>
     );
 };

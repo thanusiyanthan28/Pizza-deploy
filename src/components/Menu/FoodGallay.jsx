@@ -77,11 +77,18 @@ const FoodGallery = () => {
         }),
     };
 
+    // const mainImageAnimation = useSpring({
+    //     opacity: 1,
+    //     transform: 'rotate(0deg)',
+    //     from: { opacity: 0, transform: 'rotate(-360deg)' },
+    //     config: { tension: 170, friction: 20 },
+    //     reset: true,
+    // });
     const mainImageAnimation = useSpring({
-        opacity: 1,
+        opacity: 2,
         transform: 'rotate(0deg)',
-        from: { opacity: 0, transform: 'rotate(-360deg)' },
-        config: { tension: 170, friction: 20 },
+        from: { opacity: 1, transform: 'rotate(-360deg)' },
+        config: { tension: 10, friction: 20 },
         reset: true,
     });
 

@@ -15,6 +15,7 @@ import MainManu from './components/Menu/MainManu';
 import ViewAllManu from './components/Menu/ViewAllManu';
 import Appetizere from './components/Menu/ViewAllManu/Appetizere';
 import Service from './components/Service/Service';
+import Special from './components/Menu/Special';
 
 const App = () => {
   return (
@@ -30,6 +31,8 @@ const App = () => {
         <Route path="/download" element={<Download/>} />
         <Route path="/location" element={<Location/>} />
         <Route path="/footer" element={<Footer />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/special" element={<Special />} />
         <Route path="/service" element={<Service />} />
 
         {/* main pages */}
